@@ -23,6 +23,7 @@ class alu_monitor extends uvm_monitor#(alu_txn);
       txn.operand_b_i = intf.operand_b_i;
       txn.operator_i = intf.operator_i;
       txn.enable_i = intf.enable_i;
+      txn.print;
       mon_port.write(txn);
     end
     endtask

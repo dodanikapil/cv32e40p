@@ -9,7 +9,11 @@ class test_cfg extends uvm_object;
   
   int num_transactions = 100; 
   
-  bit en_coverage = 0; 
+  `ifdef coverage
+    bit en_coverage = 1; 
+  `else
+    bit en_coverage = 0; 
+  `endif
   bit en_scoreboard = 0; 
   
   

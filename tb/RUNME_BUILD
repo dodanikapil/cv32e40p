@@ -1,1 +1,1 @@
-vcs -sverilog -ntb_opts uvm-1.2 -f tb_pkg.f testbench.sv
+vcs -sverilog -ntb_opts uvm-1.2 -f tb_pkg.f testbench.sv +define+coverage

@@ -18,13 +18,13 @@ class alu_coverage extends uvm_component;
     cp_operand_a: coverpoint txn.operand_a_i {
       bins zero = {0};
       bins max  = {32'hFFFFFFFF};
-      bins others[] = {[1:32'hFFFFFFFE]};
+      bins others = {[1:32'hFFFFFFFE]};
     }
 
     cp_operand_b: coverpoint txn.operand_b_i {
       bins zero = {0};
       bins max  = {32'hFFFFFFFF};
-      bins others[] = {[1:32'hFFFFFFFE]};
+      bins others = {[1:32'hFFFFFFFE]};
     }
 
     cp_operator: coverpoint txn.operator_i {
