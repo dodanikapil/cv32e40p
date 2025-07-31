@@ -1,0 +1,18 @@
+export LD_LIBRARY_PATH=$VCS_HOME/etc/uvm-1.2:$LD_LIBRARY_PATH
+export $UVM_HOME=/home/ubuntu/tools/synopsys/tools/vcs/W-2024.09-SP1/etc/uvm-1.2 
+
+
+command to clean:
+%make clean
+
+command to build:
+%make build
+
+output can be observed in build.log
+
+command to run:
+%make run
+output log: run.log
+
+command for coverage:
+%make coverage
