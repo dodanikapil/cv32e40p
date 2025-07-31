@@ -1,5 +1,7 @@
-.PHONY: clean build run
+.PHONY: clean build run coverage
 SHELL :=/bin/bash
+
+all:	clean build run coverage
 clean:
 	rm -rf csrc simv* simv.daidir ucli.key run.log urg*
 build:
